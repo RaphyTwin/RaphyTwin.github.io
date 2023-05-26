@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    /*background-color: #333;*/
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    color: #fef;
+    text-align: center;
+    padding: 15px 17px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.topnav a:hover {
+    background-color: #fef;
+    color: #333;
+}
+
+.topnav a.active {
+    background-color: #7751cd;
+    color: #fef;
+}
+
+.top {
+    position: relative;
+}
+
+.homepic {
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+}
+
+.headertop {
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: bolder;
+    margin-top: 15%;
+    color: white;
+    position: absolute;
+    z-index: 100;
+}
+
+h1 span {
+    display: block;
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.0s;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+@keyframes reveal {
+    0% {
+        transform: translate(0,50%);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
